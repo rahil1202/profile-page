@@ -1,0 +1,220 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;  
+}
+
+body {
+  padding: 15px;
+  padding-top: 75px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.user-info-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info-box img{
+  max-width: 80px;
+  border-radius: 12px;
+}
+
+.profile-info-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5px;
+}
+
+.inner-box{
+  padding: 10px 15px;
+  text-align: center;
+
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.image-gallery{
+  margin: 40px auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-column-gap: 10px;
+  grid-row-gap: 12px;
+
+  grid-template-areas: 
+    "p1 p2 p2"
+    "p3 p3 p4"
+    "p5 p6 p4"
+  ;
+}
+
+.image-gallery img{
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.photo1{
+  grid-area: p1;
+}
+
+.photo2{
+  grid-area: p2;
+}
+
+.photo3{
+  grid-area: p3;
+}
+
+.photo4{
+  grid-area: p4;
+}
+
+.photo5{
+  grid-area: p5;
+}
+
+.photo6{
+  grid-area: p6;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/* TYPOGRAPHY
+font-family: 'Montserrat', sans-serif;
+/*******************************************/
+body *{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+h1 + span{
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+h3{
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+h3 + span{
+  color: #BDBDBD;
+}
+
+footer > span{
+  display: block;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #B9BDCF;
+}
+span span{
+  font-weight: 700;
+}
+
+span a{
+  text-decoration: none;
+  color: #B9BDCF;
+}
+
+span a:hover{
+  text-decoration: underline;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media screen and (min-height: 768px) {
+  .user-info-box img{
+    max-width: 120px;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+  h3 + span {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .image-gallery{
+    width: 80%;
+  }
+  
+  .photo1,
+  .photo2, 
+  .photo3, 
+  .photo5, 
+  .photo6{
+    height: 250px;
+  }
+
+  .photo4{
+    height: 515px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .image-gallery{
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .image-gallery{
+    width: 60%;
+  }
+
+  .photo1,
+  .photo2, 
+  .photo3, 
+  .photo4,
+  .photo5, 
+  .photo6{
+    min-height: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  
+}
