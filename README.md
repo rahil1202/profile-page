@@ -12,7 +12,7 @@ Welcome to the GitHub repository of my Instagram Profile Page Clone built using 
 
 ## 🌐 Live Demo
 
-Check out the live demo of the Instagram Profile Page Clone ➡️ [Live Demo](https:/profile-page-rahil1202.netlify.app)
+Check out the live demo of the Instagram Profile Page Clone ➡️ [Live Demo](https://profile-page-rahil1202.netlify.app)
 
 <br>
 
